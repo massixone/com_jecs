@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="system" method="upgrade">
+    <name>System - JECS</name>
+    <!--<name>plg_system_jecs</name>-->
+    <creationDate>2017-08-18</creationDate>
+    <author>Massimo Di Primio</author>
+    <copyright>Copyright (C) 2017- Massimo Di Primio</copyright>
+    <license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+    <authorEmail>developer@diprimio.com</authorEmail>
+    <authorUrl>https://www.diprimio.com/contatti</authorUrl>
+    <version>1.0.0</version>
+    <description>PLG_JECS_DESCRIPTION</description>
+    <!-- -->
+    <files>
+        <filename plugin="jecs">jecs.php</filename>
+        <filename plugin="jecs">jecs.xml</filename> <!-- Not strictly needed, but usefull -->
+        <filename plugin="jecs">index.html</filename>
+        <!--<folder>classes</folder>--> <!-- for future release-->
+        <!--<folder>sql</folder>-->     <!-- for future release-->
+    </files>
+    <languages>
+        <language tag="en-GB">languages/en-GB/en-GB.plg_system_jecs.sys.ini</language>
+    </languages>
+    <!-- **************************** -->
+    <config>
+        <fields name="params">
+            <!-- Section Basic 
+            <fieldset name="basic">
+            </fieldset>-->
+        </fields>
+    </config>
+        <!-- For future release
+    <updateservers>
+        <server type="extension" priority="1"
+            name="Joomla Extended Custom Script Updates"><![CDATA[http://diprimio.com/index.php?option=com_ars&view=update&task=stream&format=xml&id=9]]>
+        </server>
+    </updateservers>
+    -->
+</extension>

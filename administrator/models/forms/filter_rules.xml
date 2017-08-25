@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="filter">
+        <field name="search" type="text" hint="COM_JECS_SEARCH_FILTER_SUBMIT"
+               label="COM_USERS_FILTER_SEARCH_DESC"
+               class="js-stools-search-string" />
+
+        <field name="state"
+               type="status"
+               label="COM_JECS_FILTER_STATE"
+               description="COM_JECS_FILTER_STATE_DESC"
+               onchange="this.form.submit();"
+        >
+            <option value="">JOPTION_SELECT_PUBLISHED</option>
+        </field>
+
+        
+
+    </fields>
+
+    <fields name="list">
+
+        <field name="fullordering"
+               type="list"
+               label="COM_CONTENT_LIST_FULL_ORDERING"
+               description="COM_CONTENT_LIST_FULL_ORDERING_DESC"
+               onchange="this.form.submit();"
+               default="a.id DESC"
+        >
+            <option value="">JGLOBAL_SORT_BY</option>
+            <option value="a.`id` ASC">ID Ascending</option>
+            <option value="a.`id` DESC">ID Descending</option>
+            <option value="a.`ordering` ASC">Order Ascending</option>
+            <option value="a.`ordering` DESC">Order Descending</option>
+            <option value="a.`state` ASC">State Ascending</option>
+            <option value="a.`state` DESC">State Descending</option>
+            <option value="a.`rulename` ASC">Rule Name Ascending</option>
+            <option value="a.`rulename` DESC">Rule Name Descending</option>
+            <option value="a.`debug` ASC">Debug Ascending</option>
+            <option value="a.`debug` DESC">Debug Descending</option>
+            <!-- -->
+            <option value="a.`side` ASC">Side Ascending</option>
+            <option value="a.`side` DESC">Side Descending</option>
+            <!-- -->
+            <option value="a.`script_type` ASC">Type Ascending</option>
+            <option value="a.`script_type` DESC">Type Descending</option>
+            <option value="a.`script_source` ASC">Script Sources Ascending</option>
+            <option value="a.`script_source` DESC">Script Sources Descending</option>
+            <option value="a.`script_location` ASC">Locations Ascending</option>
+            <option value="a.`script_location` DESC">Locations Descending</option>
+            <option value="a.`script_minify` ASC">Script Minifys Ascending</option>
+            <option value="a.`script_minify` DESC">Script Minifys Descending</option>
+
+        </field>
+
+        <field name="limit"
+               type="limitbox"
+               class="input-mini"
+               default="25"
+               onchange="this.form.submit();"
+        />
+
+    </fields>
+
+</form>

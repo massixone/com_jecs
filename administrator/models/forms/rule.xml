@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <fieldset>
+    <field name="id" type="text" readonly="true" class="readonly" default="0" description="JGLOBAL_FIELD_ID_DESC"/>
+    <field name="ordering"/>
+    <field name="state" type="list" label="JSTATUS" description="JFIELD_PUBLISHED_DESC" class="inputbox" size="1" default="0">
+      <option value="1">JPUBLISHED</option>
+      <option value="0">JUNPUBLISHED</option>
+      <option value="2">JARCHIVED</option>
+      <option value="-2">JTRASHED</option>
+    </field>
+    <field name="checked_out" type="hidden" filter="unset"/>
+    <field name="checked_out_time" default="0000-00-00 00:00:00" type="hidden" filter="unset"/>
+    <field name="created_by" type="createdby" default="0" label="COM_JECS_FORM_LBL_RULE_CREATED_BY" description="COM_JECS_FORM_DESC_RULE_CREATED_BY" hidden="true" hint="COM_JECS_FORM_LBL_RULE_CREATED_BY"/>
+    <field name="modified_by" type="modifiedby" default="0" label="COM_JECS_FORM_LBL_RULE_MODIFIED_BY" description="COM_JECS_FORM_DESC_RULE_MODIFIED_BY" hidden="true" hint="COM_JECS_FORM_LBL_RULE_MODIFIED_BY"/>
+    <!-- Rule Name -->
+    <field name="rulename" required="true" message="COM_JECS_MSG_ERR_REQUIRED_RULENAME" label="COM_JECS_FORM_LBL_RULE_RULENAME" description="COM_JECS_FORM_DESC_RULE_RULENAME" hint="COM_JECS_FORM_LBL_RULE_RULENAME"/>
+    <!-- Debug (y/n) -->
+    <field name="debug" type="radio" buttons="true" class="btn-group btn-group-yesno" default="1" required="true" message="COM_JECS_MSG_ERR_REQUIRED_DEBUG" label="COM_JECS_FORM_LBL_RULE_DEBUG" description="COM_JECS_FORM_DESC_RULE_DEBUG" hint="COM_JECS_FORM_LBL_RULE_DEBUG" >
+      <option value="1">COM_JECS_RULES_DEBUG_OPTION_ON</option>
+      <option value="0">COM_JECS_RULES_DEBUG_OPTION_OFF</option>
+    </field>
+    <!-- Side: 0=None, 1=Frontend, 2=Backend, 3=Both -->
+    <field name="side" default="2" type="list" label="COM_JECS_FORM_LBL_RULE_SIDE" description="COM_JECS_FORM_DESC_RULE_SIDE" hint="COM_JECS_FORM_LBL_RULE_SIDE">
+      <option value="0">COM_JECS_RULES_SIDE_OPTION_0</option>
+      <option value="1">COM_JECS_RULES_SIDE_OPTION_1</option>
+      <option value="2">COM_JECS_RULES_SIDE_OPTION_2</option>
+      <option value="3">COM_JECS_RULES_SIDE_OPTION_3</option>
+    </field>
+    <!-- Type 0=javascript, 1=stylesheet, 2=json, 3=ld+json, 4=custom --> 
+    <field name="script_type" default="0" type="list" required="true" message="COM_JECS__MSG__ERR_REQUIRED_SCRIPT_TYPE" label="COM_JECS_FORM_LBL_RULE_SCRIPT_TYPE" description="COM_JECS_FORM_DESC_RULE_SCRIPT_TYPE" hint="COM_JECS_FORM_LBL_RULE_SCRIPT_TYPE">
+      <option value="0">COM_JECS_RULES_SCRIPT_TYPE_OPTION_0</option>
+      <option value="1">COM_JECS_RULES_SCRIPT_TYPE_OPTION_1</option>
+      <option value="2">COM_JECS_RULES_SCRIPT_TYPE_OPTION_2</option>
+      <option value="3">COM_JECS_RULES_SCRIPT_TYPE_OPTION_3</option>
+      <option value="4">COM_JECS_RULES_SCRIPT_TYPE_OPTION_4</option>
+    </field>
+    <!-- Source 0=internal (inline), 1=external -->
+    <field name="script_source" default="0" type="list" required="true" message="COM_JECS__MSG__ERR_REQUIRED_SCRIPT_SOURCE" label="COM_JECS_FORM_LBL_RULE_SCRIPT_SOURCE" description="COM_JECS_FORM_DESC_RULE_SCRIPT_SOURCE" hint="COM_JECS_FORM_LBL_RULE_SCRIPT_SOURCE">
+      <option value="0">COM_JECS_RULES_SCRIPT_SOURCE_OPTION_0</option>
+      <option value="1">COM_JECS_RULES_SCRIPT_SOURCE_OPTION_1</option>
+    </field>
+    <!-- location 0=Before </head>, 1=After </body>, 2=Before </body> -->
+    <field name="script_location" default="0" type="list" required="true" message="COM_JECS__MSG__ERR_REQUIRED_SCRIPT_LOCATION" label="COM_JECS_FORM_LBL_RULE_SCRIPT_LOCATION" description="COM_JECS_FORM_DESC_RULE_SCRIPT_LOCATION" hint="COM_JECS_FORM_LBL_RULE_SCRIPT_LOCATION">
+      <option value="0">COM_JECS_RULES_SCRIPT_LOCATION_OPTION_0</option>
+      <option value="1">COM_JECS_RULES_SCRIPT_LOCATION_OPTION_1</option>
+      <option value="2">COM_JECS_RULES_SCRIPT_LOCATION_OPTION_2</option>
+    </field>
+    <!-- Script inline text -->
+    <field name="script_inline" cols="120" rows="10" filter="raw" type="textarea" label="COM_JECS_FORM_LBL_RULE_SCRIPT_INLINE" description="COM_JECS_FORM_DESC_RULE_SCRIPT_INLINE" hint="COM_JECS_FORM_LBL_RULE_SCRIPT_INLINE" showon="script_source:0" />
+    <!-- Script Minify (y/n) -->
+    <field name="script_minify" type="radio" buttons="true" class="btn-group btn-group-yesno" default="0" required="true" message="COM_JECS__MSG__ERR_REQUIRED_SCRIPT_MINIFY" label="COM_JECS_FORM_LBL_RULE_SCRIPT_MINIFY" description="COM_JECS_FORM_DESC_RULE_SCRIPT_MINIFY" hint="COM_JECS_FORM_LBL_RULE_SCRIPT_MINIFY" showon="script_source:0" >
+      <option value="1">COM_JECS_RULES_SCRIPT_MINIFY_OPTION_ON</option>
+      <option value="0">COM_JECS_RULES_SCRIPT_MINIFY_OPTION_OFF</option>
+    </field>
+    <!-- File Path (if external) -->
+    <field name="file_path" size="512" filter="raw" maxlength="512" type="text" label="COM_JECS_FORM_LBL_RULE_FILE_PATH" description="COM_JECS_FORM_DESC_RULE_FILE_PATH" hint="COM_JECS_FORM_LBL_RULE_FILE_PATH" showon="script_source:1" />
+    <!-- Script Parameters (optional) on 'external' -->
+    <field name="script_params" maxlength="64" filter="safehtml" type="text" label="COM_JECS_FORM_LBL_RULE_SCRIPT_PARAMS" description="COM_JECS_FORM_DESC_RULE_SCRIPT_PARAMS" hint="COM_JECS_FORM_LBL_RULE_SCRIPT_PARAMS" showon="script_source:1" />
+    <!-- Version Note (text) -->
+    <field name="version_note" type="text" label="JGLOBAL_FIELD_VERSION_NOTE_LABEL" description="JGLOBAL_FIELD_VERSION_NOTE_DESC" class="inputbox" size="45" labelclass="control-label"/>
+  </fieldset>
+  <fieldset name="accesscontrol">
+    <field name="asset_id" type="hidden" filter="unset"/>
+    <field name="rules" type="rules" label="JFIELD_RULES_LABEL" translate_label="false" filter="rules" validate="rules" class="inputbox" component="com_jecs" section="rule"/>
+  </fieldset>
+</form>
