@@ -1,6 +1,0 @@
-0000000000000000000000000000000000000000 845ba79449f7d6a3ae00ff4e4ba75ca51fad47ed massixone <massix@gmail.com> 1503156533 +0200	commit (initial): first commit
-845ba79449f7d6a3ae00ff4e4ba75ca51fad47ed deb9c5546bd317b06788063c37ec0f33e9d2de9e massixone <massix@gmail.com> 1503156787 +0200	commit: First initial file load from the development environment
-deb9c5546bd317b06788063c37ec0f33e9d2de9e ffa7a7ee6ea75518e4c22cbbd2446940b64b617e massixone <massix@gmail.com> 1503166953 +0200	commit: Some minor code cleanup
-ffa7a7ee6ea75518e4c22cbbd2446940b64b617e cf10cb7e8821eca628ce7956426fd9a8956a6f22 massixone <massix@gmail.com> 1503425392 +0200	commit: Added auto install/uninstall dependencies
-cf10cb7e8821eca628ce7956426fd9a8956a6f22 cbd3ec5b9e173035dbfdf5079ffe8cf3d15ea7da massixone <massix@gmail.com> 1503666864 +0200	commit: Fixed bug in auto-install sub-extension
-cbd3ec5b9e173035dbfdf5079ffe8cf3d15ea7da ff746d51ebf62fa9cc53017e5a4ab54b0dce9d55 massixone <massix@gmail.com> 1503681092 +0200	commit: Initial README.md with some useful information

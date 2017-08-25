@@ -24,9 +24,11 @@
     <!-- **************************** -->
     <config>
         <fields name="params">
-            <!-- Section Basic 
+            <!-- Section Basic -->
+            <!--
             <fieldset name="basic">
-            </fieldset>-->
+            </fieldset>
+            -->
         </fields>
     </config>
         <!-- For future release
