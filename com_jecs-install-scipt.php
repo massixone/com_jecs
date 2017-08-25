@@ -242,7 +242,6 @@ class com_JecsInstallerScript {
                     }else {
                         $this->app->enqueueMessage("--»Component install: Error while installing additional package extention for <b>".$value['Name']."</b>", 'Error');
                     }
-                    echo "SOURCE=$src | PACKAGEPATH=$packagePath | VALUE[DIRPATH]={$value['Dirpath']}";
                 }
             }
             if (key($this->subExtensionInstallMap) == 'Plugins') {
