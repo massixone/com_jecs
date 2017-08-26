@@ -7,7 +7,7 @@
     <author>Massimo Di Primio</author>
     <authorEmail>m.diprimio@outlook.com</authorEmail>
     <authorUrl>https://www.diprimio.com</authorUrl>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <description>Joomla Extended Custom Script</description>
 
     <!-- Runs on install/uninstall/update; New in 2.5 -->
@@ -48,10 +48,7 @@
     </media>
     <languages folder="languages/site">
         <language tag="en-GB">en-GB/en-GB.com_jecs.ini</language>
-        <!--
-        Other languages will be added in some future release
         <language tag="it-IT">it-IT/it-IT.com_jecs.ini</language>
-        -->
     </languages>
     <administration>
         <menu img="media/com_jecs/images/s_com_jecs.png" >COM_JECS</menu>
