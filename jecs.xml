@@ -48,7 +48,10 @@
     </media>
     <languages folder="languages/site">
         <language tag="en-GB">en-GB/en-GB.com_jecs.ini</language>
+        <!--
+        Other languages will be added in some future release
         <language tag="it-IT">it-IT/it-IT.com_jecs.ini</language>
+        -->
     </languages>
     <administration>
         <menu img="media/com_jecs/images/s_com_jecs.png" >COM_JECS</menu>
@@ -73,10 +76,6 @@
             
 			<language tag="en-GB">en-GB/en-GB.com_jecs.ini</language>
 			<language tag="en-GB">en-GB/en-GB.com_jecs.sys.ini</language>
-			<!--
-                        <language tag="it-IT">it-IT/it-IT.com_jecs.ini</language>
-			<language tag="it-IT">it-IT/it-IT.com_jecs.sys.ini</language>
-                        -->
         </languages>
     </administration>
     <config>
@@ -97,5 +96,3 @@
     </updateservers>
     -->
 </extension>
-<!-- Component built by the Joomla Component Creator -->
-<!-- http://www.component-creator.com/ -->
