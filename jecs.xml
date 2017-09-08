@@ -7,7 +7,7 @@
     <author>Massimo Di Primio</author>
     <authorEmail>m.diprimio@outlook.com</authorEmail>
     <authorUrl>https://www.diprimio.com</authorUrl>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <description>Joomla Extended Custom Script</description>
 
     <!-- Runs on install/uninstall/update; New in 2.5 -->
@@ -19,11 +19,21 @@
             <!--<file driver="mysql" charset="utf8">sql/update.mysql.utf8.sql</file>-->
         </sql>
     </install>
-    <update> <!-- Runs on update -->
+    
+    <update>
+        <schemas>
+          <schemapath type="mysql">sql/updates/mysql</schemapath>
+        </schemas>
+    </update>
+    <!-- Runs on update -->
+    <!--
+    <update> 
         <sql>
             <file driver="mysql" charset="utf8">sql/update.mysql.utf8.sql</file>
         </sql>
     </update>
+    -->
+    
     <uninstall> <!-- Runs on uninstall -->
         <sql>
             <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
@@ -70,9 +80,8 @@
             <folder>views</folder>
         </files>
         <languages folder="languages/administrator">
-            
-			<language tag="en-GB">en-GB/en-GB.com_jecs.ini</language>
-			<language tag="en-GB">en-GB/en-GB.com_jecs.sys.ini</language>
+            <language tag="en-GB">en-GB/en-GB.com_jecs.ini</language>
+            <language tag="en-GB">en-GB/en-GB.com_jecs.sys.ini</language>
         </languages>
     </administration>
     <config>

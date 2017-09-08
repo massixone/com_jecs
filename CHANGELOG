@@ -1,0 +1,24 @@
+/**
+ * @package         Joomla Easy Custom Script (jecs)
+ * @version         1.x.y Free
+ * 
+ * @author          Massimo Di Primio <info@diprimio.com>
+ * @link            https://www.diprimio.com
+ * @copyright       Copyright© 2017 Massimo Di Primio All Rights Reserved
+ * @license         GNU GPLv3 <http://www.gnu.org/licenses/gpl.html> or later
+ *
+ * ----------------------------------------------------------------------------
+ * 
+ **
+
+CHANELOG
+
+v-1.0.2
+* Fix error: 'table column script_in-line too short' due to wrong column type `#__jecs_rules`.`script_inline`. Changed from "varchar(1024)" to "TEXT"
+* Fix error: Wrong Sql update definition in manifest file, for automatic update of Jecs database tables.
+
+v-1.0.1
+* Fixed some language files typo.
+
+v-1.0.0
+* First version of the package released in the public domain.

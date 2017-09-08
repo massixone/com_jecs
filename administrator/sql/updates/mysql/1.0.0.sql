@@ -4,7 +4,7 @@
  * 
  * @author          Massimo Di Primio <info@diprimio.com>
  * @link            https://www.diprimio.com
- * @copyright       Copyright © 2017 Massimo Di Primio All Rights Reserved
+ * @copyright       Copyright© 2017 Massimo Di Primio All Rights Reserved
  * @license         GNU GPLv3 <http://www.gnu.org/licenses/gpl.html> or later
  *
  * ----------------------------------------------------------------------------
